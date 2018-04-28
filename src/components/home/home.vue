@@ -21,6 +21,16 @@
 		<header class="header">
 			<img src="/static/imgs/banner01.jpg" alt="">
 		</header>
+		<footer class="footer">
+			<div class="info w">
+				<h3 class="title">FOLLOW</h3>
+				<div>
+					<i class="iconfont icon-github"></i>
+					<i class="iconfont icon-email"></i>
+					<i class="iconfont icon-weibo"></i>
+				</div>
+			</div>
+		</footer>
 		<div class="mark" v-show="markFlag"></div>
 	</div>
 </template>
@@ -117,6 +127,28 @@
 	.asideMenu .right .info li:hover {
 		color: #409eff;
 	}
+	.footer {
+		height: 300px;
+		overflow: hidden;
+		background-color: #f0f0f0;
+	}
+	.footer .title {
+		margin: 50px 0;
+		font-size: 25px;
+		font-weight: 700;
+	}
+	.footer .iconfont {
+		font-size: 25px;
+		margin: 10px;
+		padding: 5px;
+		cursor: pointer;
+		color: #858585;
+	}
+	.footer .iconfont:hover {
+		color: #333;
+	}
+
+
 	.mark {
 		background-color: rgba(255,255,255,.1);
 		position: fixed;

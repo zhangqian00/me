@@ -11,7 +11,7 @@ import './assets/css/reset.css';
 import './assets/css/bootstrap.min.css';
 import 'element-ui/lib/theme-chalk/index.css';
 import './assets/css/global.css';
-
+import './assets/fonts/iconfont/iconfont.css';
 
 
 /* eslint-disable no-new */
