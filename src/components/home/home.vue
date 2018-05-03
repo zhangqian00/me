@@ -1,7 +1,7 @@
 <template>
 	<div id="home">
 		<div :class="{menu:true, hideIcon:asideMenuFlag}">
-			<i class="el-icon-menu" @click="showMenu"></i>
+			<i class="iconfont icon-weibiaoti12" @click="showMenu"></i>
 		</div>
 		<!-- 右侧菜单 -->
 		<div :class="{asideMenu:true, clearfix:true, hideMenu:!asideMenuFlag}">
@@ -11,7 +11,7 @@
 			<div class="right fr">
 				<h3 class="title">MENU</h3>
 				<ul class="info">
-					<li>选项1</li>
+					<li>首页</li>
 					<li>选项2</li>
 					<li>选项3</li>
 					<li>选项4</li>
@@ -21,11 +21,18 @@
 		<header class="header">
 			<img src="/static/imgs/banner01.jpg" alt="">
 		</header>
+		<section class="section">
+			<div class="w">
+
+			</div>
+		</section>
 		<footer class="footer">
 			<div class="info w">
 				<h3 class="title">FOLLOW</h3>
 				<div>
-					<i class="iconfont icon-github"></i>
+					<a href="https://github.com/zhangqian00" target="_blank">
+						<i class="iconfont icon-github"></i>
+					</a>
 					<i class="iconfont icon-email"></i>
 					<i class="iconfont icon-weibo"></i>
 				</div>
@@ -57,6 +64,24 @@
 </script>
 
 <style scoped>
+	#home .menu {
+		position: fixed;
+		top: 30px;
+		right: 40px;
+	}
+	#home .menu i {
+		overflow: hidden;
+		cursor: pointer;
+		font-size: 40px;
+		color: #fff;
+		transition: opacity .5s ease;
+	}
+	#home .menu i:hover {
+		color: #409eff;
+	}
+	#home .hideIcon i {
+		opacity: 0;
+	}
 	.header {
 		width: 100%;
 		height: 750px;
@@ -127,8 +152,11 @@
 	.asideMenu .right .info li:hover {
 		color: #409eff;
 	}
+	.section {
+		height: 500px;
+	}
 	.footer {
-		height: 300px;
+		height: 200px;
 		overflow: hidden;
 		background-color: #f0f0f0;
 	}
@@ -136,6 +164,10 @@
 		margin: 50px 0;
 		font-size: 25px;
 		font-weight: 700;
+	}
+	.footer .info a:hover,
+	.footer .info a:focus {
+		text-decoration: none;
 	}
 	.footer .iconfont {
 		font-size: 25px;
